@@ -1,0 +1,26 @@
+#img{
+    width:15cm;
+    height:7cm;
+    padding-left: 9cm;
+   
+}
+#but{
+    position: absolute;
+  width:3cm;
+  height:.5cm;
+  right:15cm;
+  bottom:150px;
+}   
+#arr{
+    position: relative;
+  animation: mymove 5s infinite;
+
+    
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 20px;}
+  }
+  body{
+      background-color: aliceblue;
+  }
