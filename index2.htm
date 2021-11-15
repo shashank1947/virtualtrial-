@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-color:darkcyan;
+}
+#img1{
+    height:12cm;
+    width:8cm;
+    border: 2px solid powderblue;
+    position: relative;
+    top:1cm;
+    left:1cm;
+    
+}
+#img{
+    height:5cm;
+    width:5cm;
+    border: 1px solid red;
+    position: relative;
+    left: 10cm;
+    bottom:11cm;
+    
+
+}
+
+
+#img2{
+    height:5cm;
+    width:5cm;
+    border: 1px solid red;
+    position: relative;
+    left: 16cm;
+    bottom:16.1cm;
+    
+}
+#img3{
+    height:5cm;
+    width:5cm;
+    border: 1px solid red;
+    position: relative;
+    left: 23cm;
+    bottom:21.6cm;
+}
+#img4{
+    height:5cm;
+    width:5cm;
+    border: 1px solid red;
+    position: relative;
+    left: 10cm;
+    bottom:20cm;
+    position: relative;
+  animation: mymove 5s infinite;
+}
+#img5{
+    height:5cm;
+    width:5cm;
+    border: 1px solid red;
+    position: relative;
+    left: 16cm;
+    bottom:25.2cm;
+}
+#img6{
+    height:5cm;
+    width:5cm;
+    border: 1px solid red;
+    position: relative;
+    left: 23cm;
+    bottom:30.3cm;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@keyframes mymove {
+    from {left: 10cm;}
+    to {left: 4cm;}
+  }
+  body{
+      background-color: aliceblue;
+  }
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">HOME</a>
+  <a href="index1.htm">shirts</a>
+  <a href="index2.htm">pants</a>
+  <a href="#">CHILD</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<div id="lar"><img id="img1" src="https://m.media-amazon.com/images/I/51dPVs+CNWL._UL1440_.jpg"></div>
+<div id="a"><img  id="img"src="https://content.jdmagicbox.com/quickquotes/images_fs/fs_b07v7gnkjh-lailailaily-men-s-fashion-slim-fit-casual-denim-jeans-pants-for-men-black-178931986-we4db.jpg"></div>
+<div id="b"><img id="img2" src="https://www.maisonmargiela.com/36/36874625gc_27_f.jpg"><p ></p></div>
+<div id="c"><img id="img3" src="https://m.media-amazon.com/images/I/81nxcX33TPL._UL1500_.jpg"></div>
+<div id="d"><img id="img4" src="https://m.media-amazon.com/images/I/71V5fyq813L._UL1500_.jpg"></div>
+<div ><img id="img5" src="https://m.media-amazon.com/images/I/61mvbOIlvQL._UL1500_.jpg"></div>
+<div ><img id="img6" src="https://m.media-amazon.com/images/I/81D+KVOvp2L._UL1500_.jpg"></div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+}
+</script>
+   
+</body>
+</html> 
